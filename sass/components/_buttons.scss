@@ -1,0 +1,19 @@
+button {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    height: 2rem;
+    min-width: 3.5rem;
+    border-radius: 6rem;
+    border: none;
+    background: $background-gradient2;
+    cursor: pointer;
+    box-shadow: 0rem 1.5rem 2rem rgba(216, 167, 167, 0.4);
+    &:hover {
+        background: rgb(248, 186, 186);
+    }
+    img{
+        width: 20%;
+        margin: auto;
+    }
+}

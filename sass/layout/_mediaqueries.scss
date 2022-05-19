@@ -1,0 +1,131 @@
+@media (min-width:600px) {
+
+    form {
+        input {
+            padding: 3.5%;
+        }
+    }
+    #error {
+        margin-left: 3%;
+        font-size: $font-size-xs-v;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 2.5fr;
+        margin-bottom: 0;
+        grid-template-areas:
+            "logo image"
+            "main image";
+
+        .image {
+            grid-row: span 2;
+
+            #img-mob {
+                display: none;
+            }
+
+            #img-des {
+                display: block;
+                width: 100%;
+                grid-area: "image";
+
+            }
+        }
+
+        .logo {
+            margin-top: 6%;
+            margin-left: 3%;
+            grid-area: "logo";
+
+            #logo-img {
+                width: 12vw;
+            }
+        }
+
+        .main {
+            margin: 4% auto;
+            max-width: 100%;
+            grid-area: "main";
+
+            h1 {
+                text-align: left;
+                margin-left: 10%;
+                font-size: 3vw;
+                line-height: 1.2;
+                width: 50%;
+            }
+
+            .info {
+                text-align: left;
+                font-size: $font-size-s-v;
+                width: 70%;
+                margin-top: 8%;
+                margin-left: 10%;
+                margin-right: 0;
+            }
+
+            form {
+                margin-left: -22%;
+
+                input {
+
+                    width: 50%;
+                    padding: 2%;
+                    border-radius: 100px;
+                    font-size: $font-size-s-v;
+
+                    &::placeholder {
+                        font-size: $font-size-s-v;
+                    }
+                }
+
+                button {
+                    width: 13%;
+                    height: 100%;
+                    right: 18%;
+                }
+            }
+
+            #error {
+                margin-left: 6%;
+                font-size: $font-size-xs-v;
+            }
+            .error-icon{
+                background-position: right 17% center;
+                background-size: 7%;
+            }
+        }
+
+    }
+}
+
+@media (min-width:2000px) {
+    .container {
+
+        .main {
+
+            h1 {
+                font-size: 2.5vw;
+                width: 45%;
+            }
+
+            .info {
+                font-size: 1.5vw;
+            }
+
+            #error {
+                font-size: 1.5vw;
+                margin-left: 7%;
+            }
+
+        }
+
+    }
+}

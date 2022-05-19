@@ -1,0 +1,28 @@
+.container {
+
+    .main {
+        text-align: center;
+
+        h1 {
+            font-family: $font-stack;
+            letter-spacing: 7px;
+            line-height: 1.2;
+            margin: auto;
+            margin-bottom: 6%;
+            font-size: 8vw;
+            #accent {
+                font-weight: $font-light;
+                color: $primary;
+            }
+        }
+
+        .info {
+            color: $primary;
+            line-height: 1.5;
+            text-align: center;
+            font-size: $font-size-xl-v;
+            margin-bottom: 8%;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "image"
+        "main"
+        "main"
+        "main";
+
+    .logo {
+        grid-area: "logo";
+    }
+
+    #img-des {
+        grid-area: "image";
+    }
+
+    .main {
+        grid-area: "main";
+    }
+}
